@@ -1,6 +1,6 @@
 :root {
     --black: #000000;
-    --gray: #e6e6e6;
+    --gray: rgba(196, 196, 196, 0.678);
     --blue: #3399ff;
     --white: #ffffff;
 
@@ -10,13 +10,13 @@
 body {
   font-size: 20px;
   color: var(--black);
-  background-color: var(--white);
- 
 }
+
 
 header {
     text-align: left;
     height: 150px;
+    background-image: linear-gradient(to right, var(--gray), var(--white));
 }
 
 h1, p {
@@ -24,11 +24,11 @@ h1, p {
 }
 
 nav {
+    text-align: right;
     position: sticky;
     top: 0;
-
+    background-image: linear-gradient(to left, var(--gray), var(--white));
 }
-
 
 li {
     display: inline;
@@ -36,23 +36,16 @@ li {
     color: var(--black);
   }
 
-
 button {
-  background-color: #e6e6e6;
-  color: #3399ff;
-  text-align: left;
+  background-color: var(--gray);
+  color: var(--blue);
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 1;
 }
 
-button:hover {opacity: 1;}
+button:hover {opacity: 0.6;}
+
 aside {
-    float: left;
-    /* display: block;
-    position: relative; */
-    bottom: 1935px;
-    /* width: 350px;
-    height: 500px; */
     padding-bottom: 20px;
     margin: 53px;
     font-family: "Century Gothic";
@@ -61,15 +54,8 @@ aside {
     color: var(--black);
 }
 
-section {
-    position: flex;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
-    margin: 15px;
-    border: 10px solid var(--blue);
-    background: var(--black);
-    color: var(--white);
+h2 {
+    text-align: center;
 }
 
 img {
@@ -79,83 +65,33 @@ img {
     margin: 10px;
 }
 
+
 #one {
     position: static;
-    margin-left: 1400px;
+    margin-left: 0px;
 }
 
 #two {
     position: static;
-    margin-left: 925px;
+    margin-left: 500px;
 }
 
 #three {
     position: static;
-    margin-left: 1400px;
+    margin-left: 0px;
 }
 
 #four {
     position: static;
-    margin-left: 925px;
+    margin-left: 500px;
 }
 
 footer {
     text-align: center;
 }
-/* h1,p {
-    color: var(--black);
-    margin: 20px;
-} */
 
-/* #header {
-    align-items: center;
-    width: 300px;
-    height: 100px;
-} */
-
-/* main {
-  padding: 60px 0;
-} */
-
-/* a {
-  color: var(--white);
-}
-
-header,
-footer {
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
-  color: var(--white);
-} */
-
-/* header {
-  position: static;
-} */
-
-/* footer {
-  position: absolute;
-  margin-top: 0;
-  bottom: 0;
-  border-bottom: 10px solid #4F4846;
-  color: #FDF8F5;    
-} */
-
-
-
-
-
-
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
   
-@media screen and (max-width: 830px) {
+/* @media screen and (max-width: 830px) {
     header, main {
         flex-direction: column;
     }
@@ -164,4 +100,4 @@ footer {
       order: 2;
     }
    
-}
+} */
