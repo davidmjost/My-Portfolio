@@ -10,16 +10,23 @@
 body {
   font-size: 20px;
   color: var(--black);
-  background-color: blueviolet;
+  background-color: var(--white);
  
 }
 
 header {
     text-align: left;
-    height: 300px;
+    height: 150px;
 }
+
 h1, p {
     margin-left: 53px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
 }
 
 
@@ -29,11 +36,23 @@ li {
     color: var(--black);
   }
 
+
+button {
+  background-color: #e6e6e6;
+  color: #3399ff;
+  text-align: left;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+button:hover {opacity: 1;}
 aside {
-    position: relative;
+    float: left;
+    /* display: block;
+    position: relative; */
     bottom: 1935px;
-    width: 350px;
-    height: 500px;
+    /* width: 350px;
+    height: 500px; */
     padding-bottom: 20px;
     margin: 53px;
     font-family: "Century Gothic";
@@ -61,7 +80,6 @@ img {
 }
 
 #one {
-    display: flex;
     position: static;
     margin-left: 1400px;
 }
@@ -141,5 +159,9 @@ footer {
     header, main {
         flex-direction: column;
     }
-    
+
+    aside {
+      order: 2;
+    }
+   
 }
