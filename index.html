@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-  <title>Portfolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <title>Portfolio</title>
+  </head>
 
-<body>
-    <header>
-    <h1>David Jost</h1>
-    <p>Web Developer</p>
+  <body>
+    <header id="header">
+      <h1>David Jost</h1>
+      <p>Web Developer</p>
     </header>
-      
-<nav>
+
+    <nav>
       <ul>
-        <li> <a href="https://github.com/davidmjost">Github</a></li>
-        <li> <a href="#">Portfolio</a></li>
-        <li> <a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/davidmjost" target="_blank">Github</a>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  
 
-  <main>
-    <section id="one">
-      <button class="btn">
-        <h2>Lorem ipsum dolor.</h2>
-        <img
-          src="assets/images/Landscape1.JPG"
-          alt="Aerial sunset photograph." class="center"/></button>
-    </section>
+    <main>
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://davidmjost.github.io/project-1/" target="_blank">
+              <img src="./assets/images/ShowSearch.JPG" /></a>
+              <span class="card-title">ShowSearch</span>
+            </div>
+            <div class="card-content">
+              <p>
+               ShowSearch: Look up basic information and related content for your favorite TV shows.
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <section id="two">
-      <button class="btn">
-        <h2>Tempora voluptate.
-        </h2>
-        <img
-          src="assets/images/Dog.JPG"
-          alt="Photo of dog laying on the ground."/></button>
-    </section>
-
-    <section id="three">
-      <button class="btn">
-        <h2>Nam animi quaerat.</h2>
-        <img
-          src="assets/images/car.JPG"
-          alt="Photo of gold 50's sedan."/></button>
-    </section>
-
-    <section id="four">
-      <button class="btn">
-        <h2>Natus perspiciatis.</h2>
-        <img
-          src="assets/images/Sunset.JPG"
-          alt="Photo of aerial sunset."/></button>
-    </section>
-
-    <aside>
-        <h1>Biography</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident natus deserunt aliquid sed ex asperiores, alias in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non vitae praesentium nostrum sapiente eum distinctio quisquam porro odit iste. Ratione inventore dolores, architecto esse.</p>
-    </aside>
-
-
-  </main>
-
-  <footer>
-    <p>© 2021 David Jost</p>
-    <p><a href="https://github.com/davidmjost">Github</a> | davidmjost1@gmail.com | 555-555-1234 </p>
-  </footer>
+       <!-- <section id="one">
+        <title>Center an Image using text align center</title>
+      <style>
+      .img-container {
+        text-align: center;
+        display: block;
+      }
+      </style>
     
-</body>
+  
+      <span class="img-container">  Inline parent element
+      <img src="user.png" alt="">
+      </span>
+      </section>
+
+      <section id="two">
+        <h2>Tempora voluptate.</h2>
+      </section>
+
+      <section id="three">
+        <h2>Nam animi quaerat.</h2>
+      </section>
+
+      <section id="four">
+        <h2>Natus perspiciatis.</h2>
+      </section>
+
+      <aside>
+        <h1>Biography</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
+          natus deserunt aliquid sed ex asperiores, alias in. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Voluptatem non vitae
+          praesentium nostrum sapiente eum distinctio quisquam porro odit iste.
+          Ratione inventore dolores, architecto esse.
+        </p>
+      </aside> -->
+    </main>
+
+    <footer>© 2021 David Jost</footer>
+  </body>
 </html>
